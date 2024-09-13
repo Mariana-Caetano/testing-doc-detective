@@ -1,7 +1,7 @@
 # Finding the "What You Are Looking for is in the Library" book in the Amazon website
 
 1. Open a new browse window.
-2. In the new widow, copy and paste the following URL to access the Amazon website:
+2. In the new window, copy and paste the following URL to access the Amazon website:
 
         ```
         https://www.amazon.com.br/
