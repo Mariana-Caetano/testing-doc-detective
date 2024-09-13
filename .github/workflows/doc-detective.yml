@@ -1,0 +1,9 @@
+name: doc-detective
+on: [pull_request]
+
+jobs:
+  runTests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: doc-detective/github-action@v1
