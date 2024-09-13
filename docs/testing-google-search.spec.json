@@ -1,29 +1,24 @@
 {
-  "tests": [
-    {
-      "steps": [
-        {
-          "action": "goTo",
-          "url": "https://www.google.com"
-        },
-        {
-          "action": "find",
-          "selector": "[title=Search]",
-          "click": true
-        },
-        {
-          "action": "typeKeys",
-          "keys": ["American Shorthair kittens", "$ENTER$"]
-        },
-        {
-          "action": "wait",
-          "duration": 5000
-        },
-        {
-          "action": "saveScreenshot",
-          "path": "search-results.png"
-        }
-      ]
-    }
-  ]
-}
+    "tests": [
+      {
+        "steps": [
+          {
+            "action": "goTo",
+            "url": "https://www.amazon.com.br/"
+          },
+          {
+            "action": "find",
+            "selector": "#nav-search .nav-search-field",
+            "click": true,
+            "typeKeys": {
+              "keys": ["What You Are Looking for is in the Library", "$ENTER$"]
+            }
+          },
+          {
+            "action": "find",
+            "selector": "[data-testid='web-vertical']"
+          }
+        ]
+      }
+    ]
+  }
