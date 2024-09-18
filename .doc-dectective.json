@@ -1,0 +1,46 @@
+{
+    "runTests": {
+      "input": ".",
+      "detectSteps": true
+    },
+    "fileTypes": [
+      {
+        "name": "Markdown",
+        "extensions": [".md", ".markdown", ".mdx"],
+        "testStartStatementOpen": "[comment]: # (test start",
+        "testStartStatementClose": ")",
+        "testIgnoreStatement": "[comment]: # (test ignore)",
+        "testEndStatement": "[comment]: # (test end)",
+        "stepStatementOpen": "[comment]: # (step",
+        "stepStatementClose": ")",
+        "markup": [
+          {
+            "name": "onscreenText",
+            "regex": ["\\*\\*.+?\\*\\*"],
+            "actions": ["find"]
+          },
+          {
+            "name": "hyperlink",
+            "regex": ["(?<!!)\\[.+?\\]\\(.+?\\)"],
+            "actions": ["checkLink"]
+          },
+          {
+            "name": "navigationLink",
+            "regex": ["(?:[Cc]hose|[Oo]pen|[Cc]lick|[Nn]avigate to|[Gg]o to)(?<!!)\\[.+?\\]\\(.+?\\)"],
+            "actions": ["goTo"]
+          },
+          {
+            "name": "interaction",
+            "regex": [
+              "[cC]lick",
+              "[tT]ap",
+              "[sS]elect",
+              "[cC]hoose",
+              "[tT]ype",
+              "[eE]nter"
+            ]
+          }
+        ]
+      }
+    ]
+  }
