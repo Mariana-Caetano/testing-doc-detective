@@ -7,6 +7,4 @@
         https://www.amazon.com.br/
         ```
 
-3. In the Amazon website search bar, type the following book name: `What You Are Looking for is in the Library`.
-4. Click the search button.
-5. Click the first item result from the list.
+3. In the Amazon website search bar, type the following book name: `What You Are Looking for is in the Library` and press `Enter`.
