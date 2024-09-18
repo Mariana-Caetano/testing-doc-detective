@@ -1,11 +1,4 @@
-# Finding the "What You Are Looking for is in the Library" book
+# Finding the "What You Are Looking for is in the Library"
 
-1. Open a new browse window.
-2. In the new window, copy and paste the following URL to access the Google website:
-
-        ```
-        https://www.google.com.br/
-        ```
-
-3. In the Google website search bar, type the following book name: `What You Are Looking for is in the Library`.
-4. Click the search button.
+1. Go to [Google](https://www.google.com.br/).
+2. In the search bar, enter `What You Are Looking for is in the Library`, and press Enter.

@@ -4,11 +4,11 @@
         "steps": [
           {
             "action": "goTo",
-            "url": "https://www.amazon.com.br/"
+            "url": "https://www.google.com.br/"
           },
           {
             "action": "find",
-            "selector": "#nav-search .nav-search-field",
+            "selector": "#a4bIc",
             "click": true,
             "typeKeys": {
               "keys": ["What You Are Looking for is in the Library", "$ENTER$"]
@@ -17,6 +17,10 @@
           {
             "action": "find",
             "selector": "[data-testid='web-vertical']"
+          },
+          {
+            "action": "saveScreenshot",
+            "path": "search-results.png"
           }
         ]
       }
